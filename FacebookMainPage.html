@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Main Page</title>
+    <link rel="icon" href="../icons8-facebook-logo-48.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid;
+            border-color: whitesmoke;
+        }
+        #first{
+            display: flex;
+            align-items: center;
+        }
+        #search>input{
+            padding: 4px 5px;
+            border-radius: 5px;
+        }
+        #search{
+           
+            border-radius: 5px;
+        }
+        #middle>button,#end>button{
+            /* border: 2px solid; */
+            margin-left: 45px;
+            border-color: aliceblue;
+            cursor: pointer;
+        }
+        #startingsection,#middlesection,#endingsection{
+            border: 2px solid whitesmoke;
+            height: 670px;
+            width: 500px;
+        }
+        #startingsection,#endingsection{
+            background-color:whitesmoke;
+            
+        }
+        #middlesection{
+            width: 600px;
+        }
+        #space1,#space2{
+            /* border: 2px solid; */
+            height: 650px;
+            width: 10px;
+        }
+        #main{
+            display: flex;
+
+        }
+        #startingsection>i{
+            /* border: 2px solid; */
+            padding: 10px 0px;
+            cursor: pointer;
+        }
+        span{
+            margin-left: 10px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .topcards{
+            border: 2px solid;
+            height: 200px;
+            width: 135px;
+        }
+        #middletop{
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        #top1>button{
+            border-radius: 50%;
+            background-color: blue;
+            color: white;
+        }
+        #top1>img{
+            height: 160px;
+            width: 135px;
+            border-color: whitesmoke;
+        }
+        #top2{
+            background-image: url(../car\ wallpaper2.webp);
+            background-size:cover;
+            border-color: whitesmoke;
+            border-radius: 7px;
+        }
+        #top2>p,#top3>p,#top4>p{
+            color: white;
+            margin-top: 145px;
+            margin-left: 10px;
+        } 
+        #top2>button,#top3>button,#top4>button{
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            background-position: center;
+            background-size:cover;
+            border-color: blue;
+            cursor: pointer;
+            background-image: url(../car\ wallpaper3.1.jpeg);
+        }
+        #top3{
+            background-image: url(../spiderman3.jpg);
+            background-size:contain;
+            border-color: whitesmoke;
+            border-radius: 7px;
+        }
+        #top3>button{
+            background-image: url(../spiderman.jpg);
+        }
+        #top4{
+            background-image: url(../viratkohli.jpg);
+            background-size:cover;
+            border-color: whitesmoke;
+            border-radius: 7px;
+        }
+        #top4>button{
+            background-image: url(../vk.jpg);
+        }
+        #middle-middle-top>input{
+            border-radius: 20px;
+            width: 500px;
+            height: 35px;
+        }
+        #middle-middle-top>button{
+            border-radius: 50%;
+        }
+        #middle-middle-bottom{
+            display: flex;
+            justify-content: space-around;
+        }
+        #middle-middle{
+            border: 2px solid;
+            border-color: whitesmoke;
+        }
+        #middle-bottom-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #middle-bottom-top>img{
+            height: 50px;
+            width: 50px;
+        }
+        #middle-bottom-top>i{
+            margin-right:10px;
+        }
+        #mbt2>pre{
+           margin-top: -20px;
+        }
+        #mbt2{
+           margin-right: 275px;
+        }
+         #middle-bottom-top{
+            height: 40px;
+         }
+         video{
+            height: 200px;
+            width: 550px;
+         }
+         #ending-top,#ending-top2{
+            display: flex;
+         }
+         #ending-top>img,#ending-top2>img{
+            height: 140px;
+            width: 150px;
+            margin-left: 60px;
+            border-radius: 10px;
+         }
+         #endingsection>h5,#endingsection>i,.contactbtn>button{
+            margin-left: 60px;
+         }
+         #ending-top>h6,#ending-top2>h6{
+            margin-left: 20px;
+         }
+         .contactbtn>button{
+           border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            background-position: center;
+            background-size:cover;
+            /* border-color: blue; */
+            cursor: pointer;
+         }
+         #contactbtn1>button{
+            background-image: url(../Prabhaspic.jpg);
+         }
+         #contactbtn2>button{
+            background-image: url(../viratpic.jpg);
+         }
+         #contactbtn3>button{
+            background-image: url(../nanipic.jpeg);
+         }
+         #contactbtn4>button{
+            background-image: url(../klrahulpic.jpg);
+         }
+        
+         @media only screen and (min-width:769px) and (max-width:1024px){
+            
+
+         }
+         
+  
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="first">
+        <div id="starting">
+            <img src="../icons8-facebook-logo-48.png" alt="" height="40px" width="40px">
+        </div>
+        <div id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="search facebook" autofocus>
+        </div>
+        </div>
+        <div id="middle">
+            <button><i class="fa-solid fa-house fa-2x"></i></button>
+            <button><i class="fa-solid fa-id-card-clip fa-2x"></i></button>
+            <button><i class="fa-solid fa-hotel fa-2x"></i></button>
+            <button><i class="fa-solid fa-video fa-2x"></i></button>
+            <button><i class="fa-solid fa-gamepad fa-2x"></i></button>
+        </div>
+        <div id="end">
+            <button> <i class="fa-solid fa-braille fa-2x"></i></button>
+                <button> <i class="fa-brands fa-facebook-messenger fa-2x"></i></button>
+                    <button><i class="fa-solid fa-bell fa-2x"></i></button>
+                        <button><i class="fa-solid fa-user fa-2x"></i></button>
+        </div>
+    </div>
+    <div id="main">
+        <div id="startingsection">
+            <i class="fa-solid fa-user fa-2x"></i>
+            <span>Charan G </span><br>
+            <i class="fa-solid fa-user-group fa-2x"></i>
+            <span>Friends</span><br>
+            <i class="fa-regular fa-clock fa-2x"></i>
+            <span>Memories</span><br>
+            <i class="fa-solid fa-bookmark fa-2x"></i>
+            <span>Saved</span><br>
+            <i class="fa-solid fa-people-group fa-2x"></i>
+            <span>Groups</span><br>
+            <i class="fa-solid fa-file-video fa-2x"></i>
+            <span>Video</span><br>
+            <i class="fa-solid fa-house-chimney-crack fa-2x"></i>
+            <span>Marketplace</span><br>
+            <i class="fa-solid fa-layer-group fa-2x"></i>
+            <span>Feeds</span><br>
+            <i class="fa-solid fa-calendar-xmark fa-2x"></i>
+            <span>Events</span><br>
+            <i class="fa-regular fa-chart-simple fa-2x"></i>
+            <span>Ads Manager</span><br>
+            <i class="fa-solid fa-caret-down fa-2x"></i>
+            <span>See more</span><br>
+        </div>
+        <div id="space1">
+
+        </div>
+        <div id="middlesection">
+           <div id="middletop">
+            <div id="top1" class="topcards">
+               <img src="../Jersey HDgallery.jpg" alt="">
+               <button>+</button>
+               <span>Create Story</span>
+            </div>
+            <div id="top2" class="topcards">
+                <button></button>
+                <p>Range rover Car</p>
+            </div>
+            <div id="top3" class="topcards">
+                 <button></button>
+                 <p>Spider Man</p>
+            </div>
+            <div id="top4" class="topcards">
+                <button></button>
+                 <p>Virat Kohli</p>
+            </div>
+           </div><br>
+           <div id="middle-middle">
+            <div id="middle-middle-top">
+                <button><i class="fa-solid fa-user fa-2x"></i></button>
+                <input type="search" placeholder="What's on your mind?">
+            </div><br>
+            <div id="middle-middle-bottom">
+                <i class="fa-solid fa-video"></i>Live Video
+                <i class="fa-solid fa-images"></i>Photo
+                <i class="fa-solid fa-face-smile"></i>Feelings/activity
+            </div><br>
+           </div><br>
+        
+        <div id="middle-bottom">
+            <div id="middle-bottom-top">
+                <img src="../cricketlogo.png" alt="">
+                <div id="mbt2">
+                    <h5>Cricket <i class="fa-solid fa-check"></i></h5>
+                    <pre>july 24 at 3:00 PM <i class="fa-solid fa-earth-americas"></i></pre>
+                </div>
+                <i class="fa-solid fa-ellipsis"></i>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        <p>Cricket is a bat-and-ball game that is played between two teams of eleven players on a field, at the centre of which is a 22-yard</p>
+        <video src="../601-1_601-2011_preview.mp4" autoplay muted loop  ></video>
+        </div>
+        </div>
+        <div id="space2">
+
+        </div>
+        <div id="endingsection">
+            <h5>Sponsored</h5>
+            <div id="ending-top">
+                <img src="../hombalefilms.jpg" alt="">
+                <h6>Hombale Films is an Indian film production company mainly known for the K.G.F franchise, Kantara and Salaar. It was founded by Vijay Kiragandur and named by Puneeth Rajkumar, who collaborated with the company on 3 films. Wikipedia</h6>
+            </div>
+            <div id="ending-top2">
+                <img src="../chennaimall.jpeg" alt="">
+                <h6>Top Chennai (Madras) Shopping Malls: See reviews and photos of Shopping Malls in Chennai (Madras), India on Tripadvisor.</h6>
+            </div>
+            <br>
+            <h5>Birthdays</h5>
+            <i class="fa-solid fa-cake-candles"></i><b>&nbsp;&nbsp;&nbsp;&nbsp;Gurram Charan Kumar</b> birthday is comming soon
+            <i class="fa-solid fa-cake-candles"></i>&nbsp;&nbsp;&nbsp;&nbsp;<b>Badugu Varun Kumar</b> birthday is comming soon 
+            <i class="fa-solid fa-cake-candles"></i>&nbsp;&nbsp;&nbsp;&nbsp;<b>Samala Abhishek Kumar</b> birthday is comming soon
+            <br>
+            <h5>Contacts</h5>
+            <div id="contactbtn1" class="contactbtn">
+              <button></button>
+              &nbsp;&nbsp;Prabhas - +91 9846255625
+            </div>
+            <div id="contactbtn2" class="contactbtn">
+                <button></button>
+                &nbsp;&nbsp;Virat Kohli - +91 9846006251
+            </div>
+            <div id="contactbtn3" class="contactbtn">
+                <button></button>
+                &nbsp;&nbsp;KL Rahul - +91 9866255625
+            </div>
+            <div id="contactbtn4" class="contactbtn">
+                <button></button>
+                &nbsp;&nbsp;Nani - +91 9846277563
+            </div>
+            
+
+
+        </div>
+    </div>
+</body>
+</html>

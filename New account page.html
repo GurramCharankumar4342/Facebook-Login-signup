@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../icons8-facebook-logo-48.png">
+    <style>
+        body{
+            
+            background-color:rgba(218, 214, 214, 0.961);
+        }
+        #main{
+            border: 2px solid rgb(207, 213, 219);
+            height: 550px;
+            width: 450px;
+            background-color: white;
+            border-radius: 5px;
+            margin-top: 50px;
+            margin-left: 550px;
+        }
+        
+        #top{
+            /* border: 2px solid; */
+            height: 100px;
+            padding-left: 10px;
+            padding-bottom: 15px;
+            margin-top: -23px;
+            /* display: flex;
+            align-items: center;
+            justify-content: space-between; */
+        }
+        #top>p{
+            margin-top: -15px;
+            font-size:small;
+        }
+        #btn1{
+            /* border: 2px solid; */
+            width:fit-content;
+            margin-left: 410px;
+            margin-top: -60px;
+        }
+        hr{
+            margin-top: -40px;
+        }
+        .input1{
+            width: 200px;
+            height: 30px;
+            margin-left: 10px;
+            background-color:rgb(240, 240, 240);
+            border: 2px solid aliceblue;
+        }
+        .input2{
+            width: 420px;
+            height: 30px;
+            margin-left: 10px;
+            margin-top: 5px;
+            background-color:rgb(240, 240, 240);
+            border: 2px solid aliceblue;
+        }
+        h5{
+            margin-left: 10px;
+        }
+        #dateofbirth{
+            height: 30px;
+            margin-left: 10px;
+            margin-top: -40px;
+            border: 2px solid rgb(242, 245, 248);
+            padding: 4px 0px;
+        }
+        .gender{
+            border:2px solid;
+        }
+        p{
+         font-size:small;
+         margin-left: 3px;
+        }
+        p>a{
+            text-decoration: none;
+        }
+        p>a:hover{
+        cursor: pointer;
+        text-decoration:underline;
+        }
+        #btn2{
+            background-color: rgb(43, 179, 43);
+            margin: 5px;
+            font-weight:300;
+            width: 180px;
+            font-size: 20px;
+            height: 35px;
+            border-radius: 10px;
+            cursor: pointer;
+            color: white;
+            padding: 3px 2px;
+            margin-left: 120px;
+        }
+        #account{
+            color:blue;
+            text-decoration: none;
+            margin-left: 128px;
+            margin-top: 10px;
+        }
+        #fotter{
+            margin-left: 150px;
+        }
+        #fotter>a{
+    text-decoration: none;
+    color: black;
+}
+#fotter>a:hover{
+    text-decoration:underline;
+}
+
+@media only screen and (min-width:700px) and (max-width:1088px){
+    #main{
+        margin-bottom: 120px;
+        margin-left: 280px;
+    }
+    #fotter{
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width:700px) and (max-width:899px){
+    #main{
+        margin-bottom: 120px;
+        margin-left: 180px;
+    }
+    #fotter{
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:699px){
+    #main{
+        margin-bottom: 120px;
+        margin-left: 80px;
+    }
+    #fotter{
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:599px){
+    #main{
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    #main{
+        margin-left: 40px;
+    }
+    #fotter>p{
+        width: 400px;
+    }
+    
+}
+       
+    </style>
+</head>
+<body>
+   
+    <div id="main">
+        <div id="top">
+            <h1>Sign Up</h1>
+            <p>It's quick and easy.</p>
+        <div id="btn1">
+            <button><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        </div><hr>
+            <input type="text" class="input1" id="firstname" placeholder="First name" required autofocus>
+            <input type="text" class="input1" id="sname" placeholder="Surname" required autofocus>
+        <input  type="email" class="input2" id="mail" placeholder="Mobile number or email address" required autofocus>
+        <input type="password"class="input2" id="pswd" placeholder="New password" required autofocus>
+        <h5>Date of Birth ⨸</h5>
+        <input type="date" id="dateofbirth">
+        <h5>Gender Ὄ</h5>
+        &nbsp;&nbsp;&nbsp;  Male <input type="radio"  name="Male" id="" class="gender">&nbsp;&nbsp;&nbsp;
+        Female <input type="radio" name="gender" id="" class="gender">&nbsp;&nbsp;&nbsp;
+        Custom <input type="radio" name="gender" id="" class="gender">
+    <p>People who use our service may have uploaded your contact information to <br> Facebook. <a href="">Learn more</a>.</p>
+    <p>By clicking Sign Up, you agree to our Terms,<a href=""> Privacy Policy</a> and <a href="">Cookies Policy</a>.<br>
+         You may receive SMS notifications from us and can opt out at any time.</p>
+           <a href=""><button id="btn2">Sign Up</button></a><br>
+            <a href="./facebook.html" id="account"> Already have an account?</a>
+        </div><br>
+        <div id="fotter">
+            <p>English (UK) &nbsp; हिन्दी  &nbsp;اردو
+                &nbsp;   தமிழ்
+                &nbsp;   বাংলা
+             &nbsp;   मराठी
+             &nbsp;   తెలుగు
+             &nbsp;   ગુજરાતી
+             &nbsp;   ಕನ್ನಡ
+             &nbsp;   മലയാളം
+             &nbsp;   Español
+                </p>
+            <br><br><hr>
+            <a href="./New account page.html">Sign Up</a> &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./facebook.html">Log in</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Messenger</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Facebook Lite</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Video</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Places</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Games</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Marketplace</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Meta Pay</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Meta Store</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Meta Quest</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Meta AI</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Instagram</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Threads</a>
+            <br>
+            <a href="">Fundraisers</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Services</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Voting Information Center</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Privacy Policy</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Privacy Center</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Groups</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">About</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Creat ad</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Create Page</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Developers</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Careers</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Cookies</a>
+            <br>
+           <a href="">AdChoices</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Terms</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Help</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;<a href="">Contact uploading and non-users</a>
+            <br><br>
+            <p>Meta ©2024</p>
+    
+        </div>
+        <script>
+            let btn1=document.getElementById("btn1")
+            let btn2=document.getElementById("btn2")
+   
+   btn2.addEventListener("click",()=>{
+            let fname=document.getElementById("firstname").value
+            let sname=document.getElementById("sname").value
+            let mail=document.getElementById("mail").value
+            let pswd=document.getElementById("pswd").value
+            let dateofbirth=document.getElementById("dateofbirth").value
+            let gender=document.getElementsByClassName("gender").value
+
+            localStorage.setItem("First Name",fname)
+            localStorage.setItem("Surname Name",sname)
+            localStorage.setItem("Email",mail)
+            localStorage.setItem("password",pswd)
+            localStorage.setItem("dateofbirth",dateofbirth)
+            localStorage.setItem("gender",gender)
+   })
+
+   let btn=document.getElementById("btn2")
+    btn.addEventListener("click",(event)=>{
+       event.preventDefault()
+     if(confirm("Do you really want to create an account")){
+       console.log("Your account is created");
+     }
+    })
+
+    btn1.addEventListener("click",()=>{
+        window.open("./facebook.html")
+    })
+        </script>
+</body>
+</html>
